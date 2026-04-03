@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<div class="header">
+    <h1>TaskFlow</h1>
+    <p>Your personal productivity dashboard</p>
+</div>
+<div class="top-cards">
+    <div class="card">
+        <h3>Today's Date</h3>
+        <p id="today"></p>
+    </div>
+
+    <div class="card">
+        <h3>Total Assignments</h3>
+        <p id="total"></p>
+    </div>
+
+    <div class="card">
+        <h3>Completed</h3>
+        <p id="completed"></p>
+    </div>
+</div>
+
+<div class="form">
+    <input id="title" placeholder="Title">
+    <input id="subject" placeholder="Subject">
+    <input id="deadline" type="datetime-local">
+    <button class="add-btn" onclick="addAssignment()">➕ Add</button>
+</div>
+
+<h2>Assignments</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Subject</th>
+            <th>Deadline</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="table"></tbody>
+</table>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
